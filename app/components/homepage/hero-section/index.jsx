@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
+import { FaInstagram } from 'react-icons/fa';
+import { FaYoutube } from 'react-icons/fa';
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
@@ -47,11 +49,18 @@ function HeroSection() {
               <BsLinkedin size={30} />
             </Link>
             <Link
-              href={personalData.facebook}
+              href={personalData.instagram}
               target='_blank'
               className="transition-all text-pink-500 hover:scale-125 duration-300"
             >
-              <FaFacebook size={30} />
+              <FaInstagram size={30} />
+            </Link>
+            <Link
+              href={personalData.youtube}
+              target='_blank'
+              className="transition-all text-pink-500 hover:scale-125 duration-300"
+            >
+              <FaYoutube size={30} />
             </Link>
             <Link
               href={personalData.leetcode}
@@ -60,13 +69,8 @@ function HeroSection() {
             >
               <SiLeetcode size={30} />
             </Link>
-            <Link
-              href={personalData.twitter}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <FaTwitterSquare size={30} />
-            </Link>
+            
+            
           </div>
 
           <div className="flex items-center gap-3">
@@ -108,7 +112,7 @@ function HeroSection() {
               <div>
                 <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
                 <span className="text-gray-400">{`'`}</span>
-                <span className="text-amber-300">Abu Said</span>
+                <span className="text-amber-300">Hayeon</span>
                 <span className="text-gray-400">{`',`}</span>
               </div>
               <div className="ml-4 lg:ml-8 mr-2">
