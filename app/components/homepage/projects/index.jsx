@@ -1,5 +1,7 @@
 import { projectsData } from '@/utils/data/projects-data';
 import ProjectCard from './project-card';
+import SingleProject from 'C:/Users/ha/git/developer-portfolio/app/components/homepage/projects/single-project.jsx';
+
 
 const Projects = () => {
 
