@@ -7,7 +7,7 @@ export const skillsData = [
   'OpenCV',
   'Pytorch',
   'Tensorflow',
-  'R',
+  'r',
   'Git',
   'AWS',
   'Figma',

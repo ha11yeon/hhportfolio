@@ -1,7 +1,8 @@
 import ayla from '/public/image/ayla.jpg';
-import crefin from '/public/image/crefin.jpg';
+//import crefin from '/public/image/crefin.jpg';
 import realEstate from '/public/image/real-estate.jpg';
 import travel from '/public/image/travel.jpg';
+import example from "/public/svg/school/logo.png";
 
 export const projectsData = [
     {
@@ -12,7 +13,7 @@ export const projectsData = [
         role: 'Backend Developer',
         code: '',
         demo: '',
-        image: crefin,
+        image: example,
     },
     {
         id: 2,

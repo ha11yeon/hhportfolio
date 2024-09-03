@@ -1,9 +1,8 @@
 import { projectsData } from '@/utils/data/projects-data';
 import ProjectCard from './project-card';
-import SingleProject from 'C:/Users/ha/git/developer-portfolio/app/components/homepage/projects/single-project.jsx';
-
 
 const Projects = () => {
+
 
   return (
     <div id='projects' className="relative z-50  my-12 lg:my-24">
@@ -26,15 +25,7 @@ const Projects = () => {
               className="sticky-card w-full mx-auto max-w-2xl sticky"
             >
               <div className="box-border flex items-center justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)] transition-all duration-[0.5s]">
-                <SingleProject
-                  id={project.id}
-                  name={project.projectName}
-                  desc={project.projectDesc}
-                  tags={project.tags}
-                  code={project.code}
-                  demo={project.demo}
-                  image={project.image}
-                />
+                <ProjectCard project={project} />
               </div>
             </div>
           ))}
