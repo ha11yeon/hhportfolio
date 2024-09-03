@@ -8,17 +8,8 @@ import blender from '/public/svg/skills/blender.svg';
 import bootstrap from '/public/svg/skills/bootstrap.svg';
 import bulma from '/public/svg/skills/bulma.svg';
 import c from '/public/svg/skills/c.svg';
-import canva from '/public/svg/skills/canva.svg';
-import capacitorjs from '/public/svg/skills/capacitorjs.svg';
-import coffeescript from '/public/svg/skills/coffeescript.svg';
-import cplusplus from '/public/svg/skills/cplusplus.svg';
-import csharp from '/public/svg/skills/csharp.svg';
+
 import css from '/public/svg/skills/css.svg';
-import dart from '/public/svg/skills/dart.svg';
-import deno from '/public/svg/skills/deno.svg';
-import django from '/public/svg/skills/django.svg';
-import docker from '/public/svg/skills/docker.svg';
-import fastify from '/public/svg/skills/fastify.svg';
 import figma from '/public/svg/skills/figma.svg';
 import firebase from '/public/svg/skills/firebase.svg';
 import flutter from '/public/svg/skills/flutter.svg';
@@ -55,6 +46,7 @@ import postgresql from '/public/svg/skills/postgresql.svg';
 import premierepro from '/public/svg/skills/premierepro.svg';
 import python from '/public/svg/skills/python.svg';
 import pytorch from '/public/svg/skills/pytorch.svg';
+import R from '/public/svg/skills/r-svgrepo-com.svg';
 import react from '/public/svg/skills/react.svg';
 import ruby from '/public/svg/skills/ruby.svg';
 import selenium from '/public/svg/skills/selenium.svg';
@@ -77,6 +69,8 @@ import wordpress from '/public/svg/skills/wordpress.svg';
 export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
   switch (skillID) {
+    case 'R':
+      return R;
     case 'gcp':
       return gcp;
     case 'html':
