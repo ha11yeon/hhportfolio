@@ -4,6 +4,7 @@ import { educations } from "@/utils/data/educations";
 import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
 import lottieFile from '/public/lottie/study.json';
+import experience from '/public/lottie/code.json';
 
 function Education() {
   return (
@@ -36,13 +37,17 @@ function Education() {
           <div className="flex justify-center items-start">
             <div className="w-3/4 h-3/4">
               <AnimationLottie animationPath={lottieFile} />
+              <AnimationLottie animationPath={experience} />
+
             </div>
+            
           </div>
 
           <div>
             <div className="flex flex-col gap-6">
               {
                 educations.map(education => (
+                  
                   <GlowCard key={education.id} identifier={`education-${education.id}`}>
                     <div className="p-3 relative">
                     
@@ -52,22 +57,25 @@ function Education() {
                         </p>
                       </div>
                       <div className="flex items-center gap-x-8 px-3 py-5">
-                        <div className="text-violet-500 transition-all duration-300 hover:scale-125">
-                          <Image
-                            src={education.imagePath}
-                            alt={education.title}
-                            width={10}
-                            height={10}
-                            className="h-full w-auto rounded-lg"
+                      <div className="text-violet-500 transition-all duration-300 hover:scale-125">
+                        {education.logoPath ? (
+                          <img
+                            src={education.logoPath}
+                            alt={`${education.institution} logo`}
+                            className="h-12 w-auto"
                           />
-                        </div>
-                        <div>
-                          <p className="text-base sm:text-xl mb-2 font-medium uppercase">
-                            {education.title}
-                          </p>
-                          <p className="text-sm sm:text-base">{education.institution}</p>
-                        </div>
+                        ) : (
+                          <p>No logo available</p> // 로고가 없을 때 대체 텍스트 또는 요소
+                        )}
                       </div>
+                      <div>
+                       <p className="text-base sm:text-xl mb-2 font-medium uppercase">
+                          {education.title}
+                        </p>
+                        <p className="text-sm sm:text-base">{education.institution}</p>
+                      </div>
+                    </div>
+
                     </div>
                   </GlowCard>
                 ))
