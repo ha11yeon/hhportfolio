@@ -1,4 +1,4 @@
-import Blog from "./components/homepage/blog";
+import Blog from "./components/pages/blog";
 
 
 async function getData() {

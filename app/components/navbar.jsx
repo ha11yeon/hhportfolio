@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import React from 'react';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -78,7 +79,7 @@ function Navbar() {
             <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#education"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">EDUCATION</div></Link>
           </li>
           <li>
-            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/blog"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">SCORE</div></Link>
+            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/certificate"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">CERTIFICATE</div></Link>
           </li>
           <li>
             <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/blog"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">PRIZE</div></Link>
@@ -133,10 +134,10 @@ function Navbar() {
           <li>
             <Link
               className="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/blog"
+              href="/certificate"
             >
               <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
-                SCORE
+              CERTIFICATE
               </div>
             </Link>
           </li>
@@ -153,7 +154,7 @@ function Navbar() {
           <li>
             <Link
               className="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/project"
+              href="/blog"
             >
               <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
                 PROJECT
@@ -163,7 +164,7 @@ function Navbar() {
           <li>
             <Link
               className="block px-4 py-2 no-underline outline-none hover:no-underline"
-              href="/blog"
+              href="/project"
             >
               <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
                 VOLUNTEER
