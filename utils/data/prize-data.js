@@ -1,38 +1,38 @@
-  export const certificateData = [
+export const prizeData = [
     {
       id: 1,
+      image : '/png/placeholder.png',
       title: 'OPIc (Oral Proficiency Interview by Computer)',
       company: "IM2 (Intermidiate medium)",
-      duration: "June 2023",
-      pdfLink: "/path-to-pdf-file.pdf",
+      description: "June 2023"
     },
     {
       id: 2,
+      image : '/png/placeholder.png',
       title: "Transformer based NLP application implementation",
       company: "NVIDIA",
-      duration: "January 2024",
-      pdfLink: "/path-to-pdf-file.pdf"
+      description: "January 2024"
     },
     {
       id: 3,
+      image : '/image/ayla.jpg',
       title: "SK AI Data Academy (SK mySUNI)",
       company: "SK GROUP",
-      duration: "July - August 2023",
-      pdfLink: "/path-to-pdf-file.pdf"
+      description: "July - August 2023"
     },
     {
       id: 4,
+      image : '/image/ayla.jpg',
       title: "Advanced Data Analytics Semi-Professional (ADsP)",
       company: "Korea Data Agency",
-      duration: "August 2023",
-      pdfLink: "/path-to-pdf-file.pdf",
+      description: "August 2023"
     },
     {
       id: 5,
-      title: "Semiconductor Process Training and Practice Course",
+      image : '/image/ayla.jpg',
+      title: "Semiconductor Process Training and Practice",
       company: "SPTA",
-      duration: "December 2023",
-      pdfLink: "/path-to-pdf-file.pdf",
+      description: "December 2023"
     },
     
     

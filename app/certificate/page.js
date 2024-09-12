@@ -5,6 +5,9 @@ import GlowCard from "/app/components/helper/glow-card.jsx"; // 카드 UI 컴포
 import Navbar from "/app/components/navbar.jsx"; // Navbar 컴포넌트 추가
 
 export default function CertificatePage() {
+  const handleCardClick = (link) => {
+    window.open(link, '_blank');
+  };
   return (
     
     <div id="certificate" className="relative z-50 border-t mb-12 lg:mb-24 border-[#25213b]">
@@ -28,16 +31,18 @@ export default function CertificatePage() {
         </div>
       </div>
 
-      {/* GlowCard를 활용한 경험 목록 */}
       <div className="py-8">
         <div className="grid grid-cols-1 mx-20 gap-8 lg:gap-16">
-          {/* Lottie 애니메이션 부분을 제거했습니다 */}
 
           {/* GlowCard를 활용한 경험 목록 */}
           <div>
             <div className="flex flex-col gap-6">
               {certificateData.map((certificateData) => (
-                <GlowCard key={certificateData.id} identifier={`certificate-${certificateData.id}`}>
+                <GlowCard 
+                key={certificateData.id} 
+                identifier={`certificate-${certificateData.id}`}
+                
+                >
                   <div className="p-3 relative">
                     {/* 카드 배경 이미지 */}
                     <Image

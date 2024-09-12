@@ -1,7 +1,7 @@
 // @flow strict
 
 import { personalData } from "@/utils/data/personal-data";
-import BlogCard from "../components/pages/blog/blog-card";
+import BlogCard from "../components/blog/blog-card";
 
 async function getBlogs() {
   const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
