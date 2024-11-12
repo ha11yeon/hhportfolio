@@ -22,7 +22,7 @@ async function getData() {
     return (
       <>
         
-        <Project blogs={blogs} />
+        <Blog blogs={blogs} />
         
       </>
     )

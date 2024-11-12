@@ -1,28 +1,29 @@
 // /prize/[id]/page.js
-import { prizeData } from "@/utils/data/prize-data"; // 상 데이터 가져오기
+import { prizeData } from "@/utils/data/prize-data"; // Import prize data
 
-// 동적 id에 맞는 prize 데이터를 가져오는 함수
+// Function to fetch prize data based on dynamic ID
 async function getPrize(id) {
-  // id에 맞는 prizeData에서 해당 상을 찾음
-  const prize = prizeData.find((prize) => prize.id === parseInt(id));
+  const prize = prizeData.find((prize) => prize.id === parseInt(id, 10)); // Find prize by id
 
   if (!prize) {
-    throw new Error("Prize not found");
+    throw new Error("Prize not found"); // Error if id does not match any prize
   }
 
   return prize;
 }
 
+// PrizeDetails component that dynamically renders based on ID
 async function PrizeDetails({ params }) {
-  const { id } = params;
-  const prize = await getPrize(id); // 동적으로 id에 맞는 데이터 가져오기
+  const { id } = params; // Get id from URL parameters
+  const prize = await getPrize(id); // Fetch prize data based on id
 
   return (
     <div className="container mx-auto p-6">
+      {/* Display Title */}
       <h1 className="text-3xl font-bold text-white mb-6">{prize.title}</h1>
       
       <div className="flex flex-col md:flex-row gap-6">
-        {/* 상 이미지 */}
+        {/* Prize Image */}
         <div className="w-full md:w-1/3">
           <img
             src={prize.image}
@@ -33,11 +34,16 @@ async function PrizeDetails({ params }) {
           />
         </div>
 
-        {/* 상 상세 정보 */}
-        <div className="w-full md:w-2/3">
-          <p className="text-lg text-[#16f2b3] mb-2">Company: {prize.company}</p>
-          <p className="text-base text-[#d3d8e8] mb-4">{prize.description}</p>
-          <p className="text-sm text-gray-400">Duration: {prize.duration}</p>
+        {/* Prize Details */}
+        <div className="w-full md:w-2/3 space-y-4">
+          <p className="text-4xl text-[#16f2b3]">{prize.prize}</p>
+          <p className="text-lg text-[#16f2b3]">Issued by: {prize.issue}</p>
+          <p className="text-lg text-[#16f2b3]">Date: {prize.time}</p>
+          <p className="text-base lg:text-base text-[#d3d8e8] pb-3 lg:pb-6 whitespace-pre-line lg:line-clamp-5"
+          >
+
+            
+            {prize.contribution}</p>
         </div>
       </div>
     </div>

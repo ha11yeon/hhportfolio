@@ -24,7 +24,7 @@ export default function CertificatePage() {
       <div className="flex justify-center mb-5 lg:py-8">
         <div className="flex items-center">
           <span className="w-24 bg-[#1a1443]"></span>
-          <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
+          <span className="bg-[#1a1443] w-fit text-white mt-10 p-2 px-5 text-xl rounded-md">
             Certificate
           </span>
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
@@ -45,13 +45,13 @@ export default function CertificatePage() {
                 >
                   <div className="p-3 relative">
                     {/* 카드 배경 이미지 */}
-                    <Image
+                    {/*<Image
                       src="/blur-23.svg"
                       alt="Background"
                       width={1080}
-                      height={200}
+                      height={100}
                       className="absolute bottom-0 opacity-80"
-                    />
+                    />*/}
 
 
                     {/* 아이콘 및 경험 정보 */}

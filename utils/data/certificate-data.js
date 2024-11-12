@@ -2,7 +2,7 @@
     {
       id: 1,
       title: 'OPIc (Oral Proficiency Interview by Computer)',
-      company: "IM2 (Intermidiate medium)",
+      company: "IH (Intermidiate high)",
       duration: "June 2023",
       pdfLink: "/path-to-pdf-file.pdf",
     },
